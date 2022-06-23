@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family:'Times New Roman', Times, serif;
+  /* background-color: black; */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  
+  padding: 16px;
+  background-color: white;
+  border-radius: 40px;
+  position: relative;
+    height: auto;
+    width: 450px;
+    margin: 20px;
+    border: 3px solid black;
+    border-radius: 40px;
+    box-shadow: 10px 10px rgb(161, 179, 197);
+    padding-right: 15px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 40px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 40px;
+  border: 3px solid green;
+  font-size: 17px;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+a {
+  color: dodgerblue;
+}
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<form action="./dashboard.html">
+  <div class="container">
+    <h1>Register to create Account</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="Name"><b>Full Name</b></label>
+    <input type="text" placeholder="Enter Full Nmae" name="Name" id="name" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <p style="text-align: center;"><input type="checkbox" required />
+        I agree to Create an account and<br> I agree to the  
+        <a href="#">Terms & Privacy</a>.
+    </p>
+    <button type="submit" class="registerbtn" onclick="action">Register</button>
+    <br>
+    <p style="text-align:center;">Already have an account? <a type="submit" href="./login.html">Sign in</a>.</p>
+  </div>
+</form>
+
+</body>
+</html>
